@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grocery shop | store</title>
+
+	<link rel="stylesheet" href="css/groccery.css">
+</head>
+
+<body>
+	<header class="main-header">
+		<nav class="main-nav nav">
+			<ul>
+				<li><a href="/">HOME</a></li>
+				<li><a href="/store">STORE</a></li>
+				<li><a href="/cart">CART</a></li>
+				<% if (isLoggedIn) { %>
+					<li><a href="/auth/logout">LOGOUT</a></li>
+					<%} else { %>
+						<li><a href="/auth/login">LOGIN</a></li>
+						<% } %>
+			</ul>
+		</nav>
+
+		<h1 class="band-name band-name-large">Grocery Shop </h1>
+	</header>
+	<section class="content-section container">
+		<h1 class="section-heading">ABOUT</h1>
+        <img src="imagers\GMS.jpg" class="about-band-image">
+        <p>
+            we have built a Grocerry managment system which continously works upon the costumer experience of delivering Grocerry
+			on your door steps,here we have wide variety of fruits and Vegetables and we are working upon adding new itams and functionality
+			into out groccery mangagment system.
+        </p>
+       
+        <p>
+			our website's UI is built streamline and user friendly ,such that the costumer who wants to purchase the grocerry just has 
+			 to login for entering into cart by simply putting it his or her credentials then he/she has to add up  all the items he needed for groceery and then after checking into the 
+			 cart and  purchasing he has to simply logout and he is all done.
+		</p>
+	</section>
+      
+	<footer class="main-footer">
+		<div class="container main-footer-container">
+			<h3 class="band-name">
+				Grocerry Shop
+			</h3>
+			<ul class="nav footer-nav">
+				<div class="footer-extra">
+					<h4>Contact No. - 1233456789</h4>
+					<h4>Email - gmc@gmail</h4>
+					<h4>Copyright</h4>
+				</div>
+
+			</ul>
+		</div>
+	</footer>
+</body>
+<script src="js/home.js"></script>
+
+</html>
